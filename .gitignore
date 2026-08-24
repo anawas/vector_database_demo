@@ -1,0 +1,7 @@
+.claude
+.idea
+.venv
+.env
+
+model_cache
+__pycache__

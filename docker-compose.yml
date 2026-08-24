@@ -1,0 +1,13 @@
+services:
+  db:
+    image: ankane/pgvector
+    container_name: pgvector
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: yoursecretpassword
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+
+volumes:
+  pgvector_data:
